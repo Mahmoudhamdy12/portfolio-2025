@@ -1,0 +1,102 @@
+.header {
+  height: 113px;
+  width: 1980px;
+  position: relative;
+  box-shadow: 0 6px 22px -3px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-gray-100);
+  display: none;
+  max-width: 100%;
+}
+.logo-icon {
+  height: 39px;
+  width: 35px;
+  position: relative;
+  z-index: 2;
+}
+.home {
+  display: inline-block;
+  min-width: 66px;
+}
+.about,
+.home,
+.lab {
+  text-decoration: none;
+  position: relative;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  color: inherit;
+  z-index: 2;
+}
+.about {
+  display: inline-block;
+  min-width: 68px;
+}
+.lab {
+  width: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.home-parent {
+  margin: 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-plus-jakarta-sans);
+}
+.main-content,
+.webhr-description {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.webhr-description {
+  margin: 0;
+  width: 519px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) 0 0;
+}
+.main-content {
+  align-self: stretch;
+  box-shadow: 0 6px 22px -3px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-gray-100);
+  flex-direction: row;
+  justify-content: center;
+  padding: var(--padding-18xl) var(--padding-xl) var(--padding-18xl)
+    var(--padding-148xl);
+  gap: var(--gap-560xl);
+  top: 0;
+  z-index: 99;
+  position: sticky;
+}
+@media screen and (max-width: 1425px) {
+  .main-content {
+    gap: var(--gap-270xl);
+    padding-left: var(--padding-64xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 950px) {
+  .webhr-description {
+    display: none;
+  }
+  .main-content {
+    gap: var(--gap-126xl);
+    padding-left: var(--padding-22xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main-content {
+    gap: var(--gap-53xl);
+  }
+}

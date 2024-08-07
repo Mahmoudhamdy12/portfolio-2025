@@ -1,0 +1,111 @@
+.webhr-logo-vectorized {
+  width: 4096px;
+  height: 1419px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  max-width: 100%;
+}
+.linkedin {
+  margin: 0;
+}
+.linkedin-behance-container1 {
+  line-break: anywhere;
+}
+.linkedin-behance-container {
+  margin: 0;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.social-links {
+  margin-left: -5050px;
+  height: 715px;
+  width: 215px;
+  flex-direction: column;
+  padding: 67px 0 0;
+  flex-shrink: 0;
+}
+.footer,
+.portfolio,
+.social-links {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.footer {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 349px 0 458px;
+  gap: 4835px;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-black);
+  font-family: var(--font-preahvihear);
+}
+.portfolio {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  padding: 0 0 219.7px;
+  gap: 133px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1900px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1425px) {
+  .footer {
+    gap: 2417px;
+    padding-left: 229px;
+    padding-right: 174px;
+    box-sizing: border-box;
+  }
+  .portfolio {
+    gap: var(--gap-47xl);
+  }
+}
+@media screen and (max-width: 950px) {
+  .linkedin-behance-container {
+    font-size: var(--font-size-13xl);
+  }
+  .social-links {
+    padding-top: 44px;
+    box-sizing: border-box;
+  }
+  .footer {
+    gap: 1209px;
+    padding-left: 114px;
+    padding-right: 87px;
+    box-sizing: border-box;
+  }
+  .portfolio {
+    gap: var(--gap-14xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .linkedin-behance-container {
+    font-size: var(--font-size-5xl);
+  }
+  .footer {
+    gap: 604px;
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
